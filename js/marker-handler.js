@@ -17,10 +17,13 @@ AFRAME.registerComponent("marker-handler", {
     },
     handleMarkerFound: function()
     {
+        //changingbutton div visibility
         var buttondiv = document.getElementById("button-div");
         buttondiv.style.display = "flex" //output will be displayed only if the marker is found
         var ratingbutton = document.getElementById("rating-button");
         var orderbutton = document.getElementById("order-button");
+
+        //Handling Click Events
         ratingbutton.addEventListener('click', ()=>{
             swal({ //SWEET ALERT LIBRARY - used to display alert messages with some styling (default)
                 icon: 'warning',
